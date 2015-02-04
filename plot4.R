@@ -11,7 +11,7 @@ png("plot4.png")
 par(mfrow = c(2,2))
 
 #[1,1] plot
-plot(strptime(paste(powerdata$Date,powerdata$Time), "%d/%m/%Y %H:%M:%S"),as.numeric(powerdata$Global_active_power),ylab = "Global Active Power (kilowatts)", xlab = "", type = "l")
+plot(strptime(paste(powerdata$Date,powerdata$Time), "%d/%m/%Y %H:%M:%S"),as.numeric(powerdata$Global_active_power),ylab = "Global Active Power", xlab = "", type = "l")
 
 #[1,2] plot
 plot(strptime(paste(powerdata$Date,powerdata$Time), "%d/%m/%Y %H:%M:%S"),as.numeric(powerdata$Voltage),ylab = "Voltage", xlab = "datetime", type = "l")
